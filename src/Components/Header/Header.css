@@ -1,9 +1,7 @@
 .header {
-  position: absolute;
+  padding: 40px 100px;
   width: 1240px;
   height: 68px;
-  left: 100px;
-  top: 40px;
   display: flex;
   justify-content: space-between;
 }

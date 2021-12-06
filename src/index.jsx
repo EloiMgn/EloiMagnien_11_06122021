@@ -6,11 +6,12 @@ import './reset.css';
 import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
+      <Router className="index">
         <Header />
         <Routes>
           <Route excact path="/" element={<Home />} />
@@ -19,6 +20,7 @@ ReactDOM.render(
               <Error />
           </Route> */}
         </Routes>
+        <Footer />
       </Router>
 </React.StrictMode>,
   document.getElementById('root')
