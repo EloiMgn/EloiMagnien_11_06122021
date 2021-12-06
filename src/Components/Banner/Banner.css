@@ -1,0 +1,39 @@
+
+.banner_img{
+  background: #F7F7F7;
+  border-radius: 25px;
+  position: absolute;
+  width: 1240px;
+  height: 223px;
+  left: 100px;
+  top: 171px;
+  z-index: 0;
+}
+
+.banner_title{
+  position: absolute;
+  left: 28.5%;
+  top: 45%;
+  bottom: 69.04%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: #FFFFFF;
+  z-index: 2;
+}
+.banner_background{
+  position: absolute;
+  width: 1240px;
+  height: 223px;
+  left: 100px;
+  top: 171px;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 25px;
+  z-index: 1;
+}
