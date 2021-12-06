@@ -5,7 +5,7 @@ class Card extends React.Component {
   render() {
 
     return (
-    <div className='banner'>
+    <div className='card'>
     </div>
     )
   }
