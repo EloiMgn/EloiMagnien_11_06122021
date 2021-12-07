@@ -6,14 +6,14 @@ import homepageBanner from '../../Assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg';
 
 
 class Home extends React.Component {
-  render() {
-    return (
-    <main className='homepage'>
-      <Banner src={homepageBanner} title ='Chez vous, partout et ailleurs'/>
-      <Gallery />
-    </main>
-    )
-  }
+	render() {
+		return (
+			<main className='homepage'>
+				<Banner src={homepageBanner} title='Chez vous, partout et ailleurs'/>
+				<Gallery />
+			</main>
+		);
+	}
 }
 
-export default Home 
+export default Home; 

@@ -1,7 +1,7 @@
 .gallery{
   position: absolute;
   width: 1240px;
-  height: 829px;
+  height: fit-content;
   left: 100px;
   top: 437px;
   background: #F7F7F7;
@@ -10,5 +10,7 @@
   justify-content: space-around;
   align-items: center;
    flex-wrap: wrap;
-  overflow: hidden;
+  /* overflow: scroll; */
+  /* scrollbar-color: rebeccapurple green; */
+  /* scrollbar-width: thin; */
 }
