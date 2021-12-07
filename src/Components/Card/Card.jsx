@@ -3,10 +3,11 @@ import './Card.css'
 
 class Card extends React.Component {
   render() {
-
     return (
-    <div className='card'>
-    </div>
+    <li className='card'>
+      <img src={this.props.src} alt={this.props.alt} className='card_cover'/>
+      <h2 className='card_title'>{this.props.title}</h2>
+    </li>
     )
   }
 }

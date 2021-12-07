@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  min-width: 340px;
+  min-height: 340px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 30px;
+}
+
+.card_cover{
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card_title{
+  position: absolute;
+  left: 5.88%;
+  right: 5.88%;
+  top: 78.82%;
+  bottom: 5.88%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: #FFFFFF;
+}

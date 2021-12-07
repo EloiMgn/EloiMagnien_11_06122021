@@ -1,9 +1,14 @@
 .gallery{
   position: absolute;
-width: 1240px;
-height: 829px;
-left: 100px;
-top: 437px;
-background: #F7F7F7;
-border-radius: 25px;
+  width: 1240px;
+  height: 829px;
+  left: 100px;
+  top: 437px;
+  background: #F7F7F7;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+   flex-wrap: wrap;
+  overflow: hidden;
 }
