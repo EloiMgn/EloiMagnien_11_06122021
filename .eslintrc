@@ -22,6 +22,7 @@
     }],
     "react/no-array-index-key": 0,
     "quotes": [2, "single"],
-    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
+    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "react/button-has-type": 0
   }
 }
