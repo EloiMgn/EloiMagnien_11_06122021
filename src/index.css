@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
+  height: fit-content;
 }
 
 code {
@@ -16,4 +17,12 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-content: center;
+  align-items: center;
 }
+.mainDiv {
+  height: fit-content;
+}
+

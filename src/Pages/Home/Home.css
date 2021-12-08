@@ -1,6 +1,4 @@
 .homepage {
-  width: 1240px;
-  height: 1095px;
-  display: flex;
-  
+width: 100%;
+height: fit-content;
 }

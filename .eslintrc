@@ -10,7 +10,7 @@
     "prettier"
   ],
   "rules": {
-    "semi": 1,
+    "semi": 2,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "linebreak-style": ["warn", "windows"],
     "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
@@ -20,6 +20,8 @@
     "component": true,
     "html": false
     }],
-    "react/no-array-index-key": 0
+    "react/no-array-index-key": 0,
+    "quotes": [2, "single"],
+    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
   }
 }

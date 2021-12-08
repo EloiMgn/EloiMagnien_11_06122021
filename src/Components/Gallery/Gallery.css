@@ -1,16 +1,10 @@
 .gallery{
-  position: absolute;
   width: 1240px;
   height: fit-content;
-  left: 100px;
-  top: 437px;
   background: #F7F7F7;
   border-radius: 25px;
   display: flex;
   justify-content: space-around;
   align-items: center;
    flex-wrap: wrap;
-  /* overflow: scroll; */
-  /* scrollbar-color: rebeccapurple green; */
-  /* scrollbar-width: thin; */
 }
