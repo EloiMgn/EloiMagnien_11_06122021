@@ -1,5 +1,5 @@
 import React from 'react';
-import './Banner.css';
+import './Banner.scss';
 
 
 class Banner extends React.Component {
@@ -7,9 +7,9 @@ class Banner extends React.Component {
 
 		return (
 			<div className='banner'>
-				<div className='banner_title'>{this.props.title}</div>
-				<div className='banner_background'></div>
-				<img src={this.props.src} alt="" className='banner_img'/>
+				<div className='banner__title'>{this.props.title}</div>
+				<div className='banner__background'></div>
+				<img src={this.props.src} alt="" className='banner__img'/>
 			</div>
 		);
 	}

@@ -23,14 +23,14 @@ class Dropdown extends React.Component {
         <div
           className="dropdown__title"
           onClick={this.handleClick}
-          onKeyDown={this.handleClick}
+          onKeyPress={this.handleClick}
           role="button"
           tabIndex="0"
         >
           <h2 className="dropdown__title__text">{this.props.title}</h2>
           <i
             id="dropdown__title__arrow"
-            className={this.state.isToggleOn ? 'dropdown_title_arrow fas fa-chevron-up' : 'dropdown_title_arrow fas fa-chevron-down'}
+            className={this.state.isToggleOn ? 'dropdown__title__arrow fas fa-chevron-up' : 'dropdown__title__arrow fas fa-chevron-down'}
           ></i>
         </div>
         <div className={this.state.isToggleOn ? 'dropdown__description' : 'dropdown__description hidden'}>

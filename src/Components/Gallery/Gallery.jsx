@@ -1,5 +1,5 @@
 import React from 'react';
-import './Gallery.css';
+import './Gallery.scss';
 import datas from '../../Datas/datas.json';
 import Card from '../Card/Card';
 
