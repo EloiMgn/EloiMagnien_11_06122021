@@ -3,6 +3,8 @@ import './Gallery.scss';
 import datas from '../../Datas/datas.json';
 import Card from '../Card/Card';
 
+
+
 class Gallery extends React.Component {
 	render() {
 		return (
