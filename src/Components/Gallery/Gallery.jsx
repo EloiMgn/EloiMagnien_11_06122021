@@ -8,7 +8,7 @@ class Gallery extends React.Component {
 		return (
 			<ul className="gallery">
 				{datas.map((rental, idx) => (
-					<Card src= {rental.cover} alt={rental.title} title={rental.title} key={idx}/>
+					<Card id={rental.id} src= {rental.cover} alt={rental.title} title={rental.title} key={idx}/>
 				))}
 			</ul>
 		);
