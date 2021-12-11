@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import './Leftarrow.scss';
 
-class Rightarrow extends React.Component {
+class Leftarrow extends React.Component {
     constructor(props) {
     super(props);
     this.state = {activeIndex: false};
@@ -30,4 +30,4 @@ class Rightarrow extends React.Component {
   }
 }
 
-export default Rightarrow;
+export default Leftarrow;

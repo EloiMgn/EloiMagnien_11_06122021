@@ -20,6 +20,7 @@
     "component": true,
     "html": false
     }],
+    "no-plusplus": 0,
     "react/no-array-index-key": 0,
     "quotes": [2, "single"],
     "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],

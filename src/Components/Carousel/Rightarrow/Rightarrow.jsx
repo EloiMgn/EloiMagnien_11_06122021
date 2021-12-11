@@ -1,7 +1,7 @@
 import React from 'react';
 import './Rightarrow.scss';
 
-class Leftarrow extends React.Component {
+class Rightarow extends React.Component {
   render() {
     return (
       <div
@@ -17,4 +17,4 @@ class Leftarrow extends React.Component {
   }
 }
 
-export default Leftarrow;
+export default Rightarrow;

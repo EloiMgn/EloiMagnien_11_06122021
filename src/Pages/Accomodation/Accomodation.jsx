@@ -1,14 +1,20 @@
 import React from 'react';
 import './Accomodation.scss';
-import datas from '../../Datas/datas.json';
+import Carousel from '../../Components/Carousel/Carousel';
+import Title from '../../Components/Title/Title';
+import Tags from '../../Components/Tag/Tags';
+// import datas from '../../Datas/datas.json';
 
 class Accomodation extends React.Component {
   render() {
     return (
       <div>
-        <i className="fas fa-chevron-left"></i>;
-        <img src="" alt="" />
-        <i className="fas fa-chevron-right"></i>;
+        <Carousel pictures={this.props.pictures}/>
+        <Title
+          title={this.props.title}
+          location={this.props.location}
+        />
+        <Tags tags={this.props.tags} />
       </div>
     );
   }
