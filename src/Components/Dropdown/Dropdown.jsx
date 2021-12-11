@@ -4,7 +4,7 @@ import './Dropdown.scss';
 class Dropdown extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {isToggleOn: false};
+    this.state = { isToggleOn: false };
 
     // Cette liaison est nécéssaire afin de permettre
     // l'utilisation de `this` dans la fonction de rappel.
@@ -12,12 +12,14 @@ class Dropdown extends React.Component {
   }
 
   handleClick() {
-    this.setState(state => ({
+    this.setState((state) => ({
       isToggleOn: !state.isToggleOn
     }));
   }
 
   render() {
+    const dropdownText = this.props.text;
+    const dropdowntextType = typeof(dropdownText);
     return (
       <div className="dropdown">
         <div
@@ -30,12 +32,24 @@ class Dropdown extends React.Component {
           <h2 className="dropdown__title__text">{this.props.title}</h2>
           <i
             id="dropdown__title__arrow"
-            className={this.state.isToggleOn ? 'dropdown__title__arrow fas fa-chevron-up' : 'dropdown__title__arrow fas fa-chevron-down'}
+            className={
+              this.state.isToggleOn
+                ? 'dropdown__title__arrow fas fa-chevron-up'
+                : 'dropdown__title__arrow fas fa-chevron-down'
+            }
           ></i>
         </div>
-        <div className={this.state.isToggleOn ? 'dropdown__description' : 'dropdown__description hidden'}>
+        <div
+          className={
+            this.state.isToggleOn
+              ? 'dropdown__description'
+              : 'dropdown__description hidden'
+          }
+        >
           <div className="dropdown__description__text">
-            <p>{this.props.text}</p>
+            {dropdowntextType === 'object' ? dropdownText.map((text, idx) => (
+              <p key={idx}>{text}</p>
+            )) : <p>{dropdownText}</p>}
           </div>
         </div>
       </div>

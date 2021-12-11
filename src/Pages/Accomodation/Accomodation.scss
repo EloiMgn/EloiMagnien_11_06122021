@@ -1,0 +1,37 @@
+.accomodation {
+  margin: auto;
+  width: 100%;
+
+  &__topDescription {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__downDescription {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    max-width: 100%;
+
+    &__left {
+      width: 100%;
+      margin-right: 38px;
+    }
+
+    &__right {
+      width: 100%;
+      margin-left: 38px;
+    }
+  }
+}

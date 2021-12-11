@@ -21,8 +21,9 @@ ReactDOM.render(
           <Route excact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
-          {Datas.map((rental) => (
+          {Datas.map((rental, idx) => (
             <Route
+            key={idx}
               path={rental.id}
               element={
                 <Accomodation
@@ -30,6 +31,11 @@ ReactDOM.render(
                   location={rental.location}
                   tags={rental.tags}
                   pictures={rental.pictures}
+                  hostName={rental.host.name}
+                  hostPic={rental.host.picture}
+                  value={rental.rating}
+                  textDescription={rental.description}
+                  textEquipements={rental.equipments}
                 />
               }
             />

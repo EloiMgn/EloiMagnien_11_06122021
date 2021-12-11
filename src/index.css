@@ -24,5 +24,7 @@ code {
 }
 .mainDiv {
   height: fit-content;
+  margin: auto;
+  max-width: 1240px;
 }
 
