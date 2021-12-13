@@ -16,6 +16,9 @@
     text-align: right;
     color: #FF6060;
     margin-right: 5px;
+    @media screen and (max-width:376px) {
+      font-size: 13px;
+    }
   }
 
   &__picFrame {
@@ -29,6 +32,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width:376px) {
+      width: 32px;
+      min-width: 32px;
+      height: 32px;
+    }
   }
   &__picture{
     display: block;

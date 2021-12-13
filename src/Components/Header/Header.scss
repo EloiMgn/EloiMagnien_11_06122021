@@ -7,19 +7,22 @@
   justify-content: space-between;
   align-items: center;
 
+  @media screen and (max-width:1240px) {
+    width: 90%;
+  }
+
   @media screen and (max-width:768px) {
-    margin: 10px;
     justify-content: space-around;
   }
 
 }
 
 .main-logo {
-  @media screen and (max-width:376px) {
+  @media screen and (max-width:768px) {
     width: 145px;
     height: 47px;
-    margin-left: 20px;
   }
+
 }
 
 .mainNav {
@@ -27,7 +30,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width:376px) {
+  @media screen and (max-width: 768px) {
     margin-left: 50px;
     margin-right: 20px;
   }
@@ -43,6 +46,10 @@
     align-items: flex-end;
     text-align: right;
     color: #FF6060;
+
+    @media screen and (max-width:768px) {
+      font-size: 16px;
+    }
 
     @media screen and (max-width:376px) {
       font-size: 12px;

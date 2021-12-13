@@ -21,7 +21,7 @@ class Accomodation extends React.Component {
             <Title title={this.props.title} location={this.props.location} />
             <Tags tags={this.props.tags} />
           </div>
-          <div className="accomodation__topDescription_right">
+          <div className="accomodation__topDescription__right">
             <Host hostName={this.props.hostName} hostPic={this.props.hostPic} />
             <Rate value={this.props.value} />
           </div>

@@ -7,6 +7,9 @@ line-height: 142.6%;
 display: flex;
 align-items: flex-end;
 color: #FF6060;
+@media screen and (max-width:376px) {
+  font-size: 18px;
+}
 }
 
 .location{
@@ -18,4 +21,7 @@ line-height: 142.6%;
 display: flex;
 align-items: flex-end;
 color: #FF6060;
+@media screen and (max-width:376px) {
+  font-size: 14px;
+}
 }

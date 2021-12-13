@@ -4,6 +4,9 @@
   justify-content: space-around;
   align-items: center;
   height: 100vh;
+  @media screen and (max-width:768px) {
+    height: 60vh;
+  }
 
   &__number {
     font-family: Montserrat;
@@ -15,6 +18,9 @@
     align-items: center;
     text-align: center;
     color: #FF6060;
+    @media screen and (max-width:768px) {
+      font-size: 96px;
+    }
   }
 
   &__text {
@@ -26,6 +32,11 @@
     display: flex;
     align-items: flex-end;
     color: #FF6060;
+
+    @media screen and (max-width:768px) {
+      font-size: 18px;
+      text-align: center;
+    }
   }
 
   &__link {

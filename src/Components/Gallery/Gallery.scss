@@ -1,4 +1,4 @@
-.gallery{
+.gallery {
   max-width: 1240px;
   width: 100%;
   height: fit-content;
@@ -7,6 +7,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-   flex-wrap: wrap;
-   margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  @media screen and (max-width:768px) {
+    background: #FFFFFF;
+  }
+
+  @media screen and (max-width:376px) {
+    max-width: 335px;
+    background: #FFFFFF;
+  }
 }

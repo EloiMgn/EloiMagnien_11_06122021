@@ -2,7 +2,15 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 25px;
+  @media screen and (max-width:376px) {
+    margin-top: unset;
+}
   &Star{
     margin-left: 10px;
+    @media screen and (max-width:376px) {
+      width: 15px;
+      height: 15px;
+
+  }
   }
 }

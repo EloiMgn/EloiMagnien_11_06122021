@@ -13,6 +13,10 @@
     margin: 5px;
     box-sizing: border-box;
     border-radius: 10px;
+    @media screen and (max-width:376px) {
+      border-radius: 5px;
+      padding: 2px 30px;
+  }
     p {
       font-family: Montserrat;
       font-style: normal;
@@ -21,6 +25,9 @@
       line-height: 142.6%;
       text-align: center;
       color: #FFFFFF;
+      @media screen and (max-width:376px) {
+        font-size: 10px;
+    }
     }
   }
 }
