@@ -1,22 +1,39 @@
-.carousel{
-  width: 100%;
-  height: 415px;
-  background-color: #FF6060;
+.carousel {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+}
+
+.slider {
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: normal;
   border-radius: 25px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 142.6%;
-  color: #FFFFFF;
-  @media screen and (max-width:376px) {
-  max-width: 335px;
-  max-height:255px;
-  margin: auto;
+
+  &__image {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__index {
+    position: absolute;
+    left: 48.95%;
+    right: 49.11%;
+    top: 71%;
+    bottom: 25%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 1;
   }
 }

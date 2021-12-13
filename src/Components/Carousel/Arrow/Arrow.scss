@@ -1,0 +1,32 @@
+.arrow{
+  &__left{
+    font-size: 100px;
+    color: white;
+    // margin-right: -15px;
+    z-index: 1;
+  }
+  &__right{
+    font-size: 100px;
+    color: white;
+    // margin-left: -15px;
+    z-index: 1;
+  }
+}
+
+.slide-arrow{
+
+  &__left{
+    margin-right: -70px;
+    z-index: 1;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__right{
+    margin-left: -70px;
+    z-index: 1;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
