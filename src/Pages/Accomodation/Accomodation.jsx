@@ -15,6 +15,7 @@ class Accomodation extends React.Component {
         <Carousel
           className="accomodation__carousel"
           pictures={this.props.pictures}
+          alt={this.props.alt}
         />
         <div className="accomodation__topDescription">
           <div className="accomodation__topDescription__left">

@@ -31,6 +31,7 @@ ReactDOM.render(
                   location={rental.location}
                   tags={rental.tags}
                   pictures={rental.pictures}
+                  alt={rental.title}
                   hostName={rental.host.name}
                   hostPic={rental.host.picture}
                   value={rental.rating}

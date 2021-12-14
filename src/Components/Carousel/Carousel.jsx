@@ -1,5 +1,6 @@
 import React from 'react';
 import Arrow from './Arrow/Arrow';
+import Slider from './Slider/Slider';
 import './Carousel.scss';
 
 class CarouselImg extends React.Component {
@@ -44,15 +45,12 @@ class CarouselImg extends React.Component {
           clickFunction={this.previousSlide}
           glyph="&#9664;"
         />
-
-        <div className="slider">
-          <img
-            src={this.imgUrls[this.state.currentImageIndex]}
-            alt=""
-            className="slider__image"
-          />
-        <div className='slider__index'>{`${this.state.currentImageIndex+1}/${this.imgUrls.length}`}</div>
-        </div>
+        <Slider
+          src={this.imgUrls[this.state.currentImageIndex]}
+          alt={this.props.alt}
+          currentImageIndex={this.state.currentImageIndex}
+          arrayLength={this.imgUrls.length}
+        />
         <Arrow
           direction="right"
           clickFunction={this.nextSlide}
