@@ -1,11 +1,11 @@
 import React from 'react';
 import './Arrow.scss';
-
+// {this.props.imagesLength > 1 ?  : {display: none}}
 class Arrow extends React.Component {
   render() {
     return (
       <div
-        className={`slide-arrow__${this.props.direction}`}
+        className={this.props.imagesLength > 1 ? `slide-arrow__${this.props.direction}` : 'hidden'}
         onClick={this.props.clickFunction}
         onKeyPress={this.props.clickFunction}
         role="button"

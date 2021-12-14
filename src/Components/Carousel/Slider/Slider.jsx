@@ -10,7 +10,7 @@ class Slider extends React.Component {
           alt={this.props.alt}
           className="slider__image"
         />
-        <div className="slider__index">{`${this.props.currentImageIndex + 1}/${
+        <div className={this.props.arrayLength > 1 ? 'slider__index' : 'hidden'}>{`${this.props.currentImageIndex + 1}/${
           this.props.arrayLength
         }`}</div>
       </div>

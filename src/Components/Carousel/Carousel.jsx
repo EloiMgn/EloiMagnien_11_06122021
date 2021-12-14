@@ -43,7 +43,7 @@ class CarouselImg extends React.Component {
         <Arrow
           direction="left"
           clickFunction={this.previousSlide}
-          glyph="&#9664;"
+          imagesLength= {this.imgUrls.length}
         />
         <Slider
           src={this.imgUrls[this.state.currentImageIndex]}
@@ -54,7 +54,7 @@ class CarouselImg extends React.Component {
         <Arrow
           direction="right"
           clickFunction={this.nextSlide}
-          glyph="&#9654;"
+          imagesLength= {this.imgUrls.length}
         />
       </div>
     );
