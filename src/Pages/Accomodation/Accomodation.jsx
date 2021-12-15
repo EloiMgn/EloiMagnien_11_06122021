@@ -6,7 +6,6 @@ import Tags from '../../Components/Tag/Tags';
 import Host from '../../Components/Host/Host';
 import Rate from '../../Components/Rate/Rate';
 import Dropdown from '../../Components/Dropdown/Dropdown';
-// import datas from '../../Datas/datas.json';
 
 class Accomodation extends React.Component {
   render() {
