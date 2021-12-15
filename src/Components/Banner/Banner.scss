@@ -15,6 +15,10 @@
     height: 111px;
     margin: 10px auto;
   }
+  @media screen and (max-width:320px) {
+    max-width: 300px;
+    margin: 10px auto 20px auto;
+  }
 
   &__img {
     position: absolute;

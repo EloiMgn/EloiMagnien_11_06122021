@@ -17,12 +17,17 @@
     height: 255px;
   }
 
+  @media screen and (max-width:320px) {
+    max-width: 300px;
+  }
+
   &__image {
     object-fit: cover;
     object-position: center;
 
     @media screen and (max-width:376px) {
-      max-height: 255px;
+      height: 255px;
+      width: 500px;
     }
   }
 

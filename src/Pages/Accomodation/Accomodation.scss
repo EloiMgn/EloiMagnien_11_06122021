@@ -12,15 +12,15 @@
     margin: auto;
   }
 
+
   &__topDescription {
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
 
-    // @media screen and (max-width:768px) {
-    //   max-width: 728px;
-    //   margin: auto;
-    // }
+    @media screen and (max-width:320px) {
+      max-width: 300px;
+    }
 
     @media screen and (max-width:768px) {
       flex-direction: column;
@@ -52,6 +52,10 @@
 
     @media screen and (max-width:768px) {
       flex-direction: column;
+    }
+    
+    @media screen and (max-width:320px) {
+      max-width: 300px;
     }
 
     &__left {
