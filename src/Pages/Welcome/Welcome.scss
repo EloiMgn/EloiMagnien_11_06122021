@@ -1,19 +1,18 @@
-.error {
+.welcome{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 60vh;
   @media screen and (max-width:768px) {
     height: 60vh;
   }
-
-  &__number {
+  &__text{
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 288px;
-    line-height: 142.6%;
+    font-size: 48px;
+    line-height: 200%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -22,32 +21,16 @@
       font-size: 96px;
     }
   }
-
-  &__text {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 142.6%;
-    display: flex;
-    align-items: flex-end;
-    color: #FF6060;
-
-    @media screen and (max-width:768px) {
-      font-size: 18px;
-      text-align: center;
-    }
-  }
-
   &__link {
     font-family: Montserrat;
     font-style: normal;
+    text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 142.6%;
+    font-size: 36px;
+    // line-height: 100%;
     display: flex;
     align-items: flex-end;
-    text-decoration-line: underline;
+    // text-decoration-line: underline;
     color: #FF6060;
     &:hover {
       text-decoration: underline;

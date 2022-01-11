@@ -6,6 +6,7 @@ import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
 import Error from '../Components/Error/Error';
 import Accomodation from '../Pages/Accomodation/Accomodation';
+import Welcome from '../Pages/Welcome/Welcome';
 import Datas from '../Datas/datas.json';
 
 class Routing extends React.Component {
@@ -15,7 +16,8 @@ class Routing extends React.Component {
       <Header />
       <div className="mainDiv">
         <Routes>
-          <Route excact path="/" element={<Home />} />
+          <Route excact path="/" element={<Welcome />} />
+          <Route excact path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
           {Datas.map((rental, idx) => (
